@@ -3497,6 +3497,34 @@
   },
   {
     "repository": "Git",
+    "url": "https://github.com/apple/swift-distributed-actors",
+    "path": "swift-distributed-actors",
+    "branch": "main",
+    "maintainer": "ktoso@apple.com",
+    "compatibility": [
+      {
+        "version": "5.5",
+        "_branch_name": "release/0.x",
+        "commit": "b1f1b7c41783bebceabd477a9c1707f6a02a035d"
+      }
+    ],
+    "platforms": [
+      "Darwin",
+      "Linux"
+    ],
+    "actions": [
+      {
+        "action": "BuildSwiftPackage",
+        "configuration": "release",
+        "tags": "sourcekit-disabled swiftpm"
+      },
+      {
+        "action": "TestSwiftPackage"
+      }
+    ]
+  },
+  {
+    "repository": "Git",
     "url": "https://github.com/apple/swift-cluster-membership",
     "path": "swift-cluster-membership",
     "branch": "main",
